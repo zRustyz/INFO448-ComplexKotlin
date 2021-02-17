@@ -4,7 +4,7 @@ This homework is designed to force you to exercise your knowledge of the Kotlin 
 ## Goal
 Your task is simple: ***Make the code compile, and make all the unit tests pass.***
 
-Again, all your work should be in the `Homework.kt` file, and you may not modify the `HomeworkTest.kt` file in any substantive way.
+Again, all your work should be in the `Library.kt` file, and you may not modify the `LibraryTest.kt` file in any substantive way.
 
 ## To obtain this code...
 ... clone the repository using Git:
@@ -22,12 +22,12 @@ Make sure to create a GitHub repository for your clone, and re-home the remote o
 If you find it hard to remember what to do, look back at the previous assignment for details. Reach out to the TA if you are still stuck.
 
 ## Now what?
-If you do not see the `Homework` and `HomeworkTest` files at first, you can find them here:
+If you do not see the `Library.kt` and `LibraryTest.kt` files at first, you can find them here:
 
-* `src/main/kotlin/edu/uw/basic-kotlin/Homework.kt`
-* `src/test/kotlin/edu/uw/basic-kotlin/HomeworkTest.kt`
+* `src/main/kotlin/edu/uw/complexkotlin/Library.kt`
+* `src/test/kotlin/edu/uw/complexkotlin/LibraryTest.kt`
 
-Note that you will do all of your work in the `Homework.kt` file, and you should not need to modify anything in the `HomeworkTest.kt` file; in fact, modifying that file could jeopardize your grade! If you feel you need to make changes to it, contact the TA before doing so--chances are very good that the problem lies elsewhere.
+Note that you will do all of your work in the `Library.kt` file, and you should not need to modify anything in the `LibraryTest.kt` file; in fact, modifying that file could jeopardize your grade! If you feel you need to make changes to it, contact the TA before doing so--chances are very good that the problem lies elsewhere.
 
 ## The assignment
 The code is broken into a sequence of sections. Your job is to implement the body of each section, so that the tests will pass.
