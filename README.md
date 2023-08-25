@@ -7,19 +7,15 @@ Your task is simple: ***Make the code compile, and make all the unit tests pass.
 Again, all your work should be in the `Library.kt` file, and you may not modify the `LibraryTest.kt` file in any substantive way.
 
 ## To obtain this code...
-... clone the repository using Git:
+... you must first obtain a copy of the source. You do that by cloning this repository. Two options are available to you:
 
-    git clone https://github.com/tedneward/uw-complex-kotlin
+1. **Fork this repository.** From the GitHub repository web page, click "Fork" in the upper-right. This will create a copy of this repository in your own GitHub account. From there do a `git clone` from your own copy of the GitHub repository.
 
-Build and run the tests by using `gradlew` or `gradlew.bat`, depending on your operating system.
+2. **Clone and re-home this repository.** Open a "Command Prompt" or "Terminal" instance and use:
 
-    ./gradlew test
+        git clone https://github.com/tedneward/INFO448-ComplexKotlin simplekotlin
 
-Make sure to create a GitHub repository for your clone, and re-home the remote origin to it:
-
-    git remote set-url origin https://github.com/[your-ID]/complexkotlin
-
-If you find it hard to remember what to do, look back at the previous assignment for details. Reach out to the TA if you are still stuck.
+    ... to do the deed. This will also create a local copy of the project on your machine in a directory called `complexkotlin`. You will also need to "re-home" your local copy so it points to your own GitHub account; you can do this by creating a repository of this same name (`INFO448-ComplexKotlin`) in your GitHub account and then executing `git remote set-url origin https://github.com/[your-ID]/INFO448-ComplexKotlin.git`. (Needless to say, it's a lot easier to fork the repo.)
 
 ## Now what?
 If you do not see the `Library.kt` and `LibraryTest.kt` files at first, you can find them here:
