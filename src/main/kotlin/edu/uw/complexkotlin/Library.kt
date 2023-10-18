@@ -14,7 +14,8 @@ class Library {
 // use fold() to compress the array of strings down into a single string.
 // the final string should look like FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZ for 0..15.
 // store this lambda into 'fizzbuzz' so that the tests can call it
-//
+
+
 val fizzbuzz : (IntRange) -> String = { nums -> nums.map { when (it) {
     in listOf(15) -> "FIZZBUZZ"
     in listOf(3, 6, 9, 12, 15) -> "FIZZ"
@@ -23,18 +24,9 @@ val fizzbuzz : (IntRange) -> String = { nums -> nums.map { when (it) {
 }}.fold("", { acc, elem -> acc + elem } )
 }
 
-// Example usage
-/*
-if (fizzbuzz(0..1) == "")
-    println("Success!")
-if (fizzbuzz(0..3) == "FIZZ")
-    println("Success!")
-if (fizzbuzz(0..5) == "BUZZ")
-    println("Success!")
-*/
-
 // This is a utility function for your use as you choose, and as an
 // example of an extension method
+
 fun Int.times(block: () -> Unit): Unit {
     for (it in 1..this) {
         block()
@@ -48,17 +40,18 @@ fun process(message: String, block: (String) -> String): String {
 // Create r1 as a lambda that calls process() with message "FOO" and a block that returns "BAR"
 val r1 = { process("FOO") { "BAR"} }
 
-// Create r2 as a lambda that calls process() with message "FOO" and a block that upper-cases 
+// Create r2 as a lambda that calls process() with message "FOO" and a block that upper-cases
 // r2_message, and repeats it three times with no spaces: "WOOGAWOOGAWOOGA"
+
 val r2_message = "wooga"
-val r2 = { process("FOO") 
+val r2 = { process("FOO")
     {
         var ret = ""
         3.times {
             ret += r2_message.toUpperCase()
         }
         ret
-    } 
+    }
 }
 
 
@@ -80,6 +73,7 @@ enum class Philosopher {
 // that takes a single parameter ("message" of type String)
 // primary constructor should take a String argument ("prompt")
 // when invoked, the Command object should return a String containing the prompt and then the message
+
 class Command(val prompt: String) {
     public operator fun invoke(message: String): String {
         return prompt + message
